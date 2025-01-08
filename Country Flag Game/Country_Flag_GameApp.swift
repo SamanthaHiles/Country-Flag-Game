@@ -15,3 +15,7 @@ struct Country_Flag_GameApp: App {
         }
     }
 }
+
+#Preview {
+    ContentView()
+}
