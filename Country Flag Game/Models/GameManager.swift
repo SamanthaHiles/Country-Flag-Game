@@ -21,11 +21,13 @@ class GameManager: ObservableObject {
         reset()
     }
     func reset () {
+        loadQuestions()
         questions = questions.shuffled()
         index = 0
         score = 0
         progress = 0.0
         playingGame = true
+        goToNextQuestion()
     }
     func loadQuestions() {
         let countries = Data().countries
@@ -47,8 +49,8 @@ class GameManager: ObservableObject {
                     questions.append(Question(correctAnswer: Answer(text: country, isCorrect: true),
                                                 incorrectAnswers : [
                                                     Answer(text: incorrectAnswer[0], isCorrect: false),
-                                                    Answer(text: incorrectAnswer[0], isCorrect: false),
-                                                    Answer(text: incorrectAnswer[0], isCorrect: false)
+                                                    Answer(text: incorrectAnswer[1], isCorrect: false),
+                                                    Answer(text: incorrectAnswer[2], isCorrect: false)
                     ]))
                 }
                 else {
@@ -76,4 +78,8 @@ class GameManager: ObservableObject {
             score += 1
         }
     }
+}
+
+#Preview {
+    
 }

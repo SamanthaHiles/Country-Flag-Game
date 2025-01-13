@@ -5,7 +5,7 @@
 //  Created by Samantha Hiles on 1/8/25.
 //
 
-import Foundation
+import SwiftUI
 struct Answer: Identifiable {
     var id = UUID()
     var text: String

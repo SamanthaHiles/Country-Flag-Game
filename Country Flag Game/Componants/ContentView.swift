@@ -17,6 +17,7 @@ struct ContentView: View {
                         .font(.title)
                         .fontWeight(.heavy)
                     Text("Are you ready to test your skills")
+                        .foregroundStyle(.yellow)
                 }
                 NavigationLink {
                     QuestionView()
@@ -28,6 +29,7 @@ struct ContentView: View {
             }
             .foregroundColor(.yellow)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .ignoresSafeArea(.all)
             .background(.cyan)
         }
     }
