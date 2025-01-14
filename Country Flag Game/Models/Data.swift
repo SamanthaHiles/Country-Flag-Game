@@ -13,6 +13,7 @@ struct Data {
         "Angola",
         "Austria",
         "Bulgaria",
+        "Canada",
         "China",
         "Dominican Rebublic",
         "England",
