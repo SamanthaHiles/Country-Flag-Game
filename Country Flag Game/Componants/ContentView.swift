@@ -16,7 +16,7 @@ struct ContentView: View {
                     Text("Country Flag Game")
                         .font(.title)
                         .fontWeight(.heavy)
-                    Text("Are you ready to test your skills")
+                    Text("See what you know!")
                         .foregroundStyle(.yellow)
                 }
                 NavigationLink {
@@ -31,6 +31,7 @@ struct ContentView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.all)
             .background(.cyan)
+            
         }
     }
 }
